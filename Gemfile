@@ -73,3 +73,5 @@ end
 
 gem "devise", "~> 4.8"
 gem 'devise-jwt', '~> 0.7.0'
+gem 'rack-cors'
+gem 'pry'
