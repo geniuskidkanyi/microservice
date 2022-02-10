@@ -4,11 +4,13 @@ class Api::TransactionsController < Api::BaseController
 
   # GET /transactions or /transactions.json
   def index
-    @transactions = Transaction.where(user_id: current_user.id)
+    @transactions = Transaction.all
   end
 
   # GET /transactions/1 or /transactions/1.json
   def show
+       render json: { status: :ok, data: @transaction }
+
   end
 
 
